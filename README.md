@@ -1,61 +1,176 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Meu Site JavaScript</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Meu Primeiro Projeto</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+
+            background:
+                radial-gradient(circle at top, #263238, #0d1117 60%);
+
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+
+            background: rgba(255, 255, 255, 0.08);
+
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+            border-radius: 20px;
+
+            padding: 50px 30px;
+
+            text-align: center;
+
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+
+            backdrop-filter: blur(10px);
+        }
+
+        .tag {
+            display: inline-block;
+
+            padding: 8px 16px;
+
+            border-radius: 30px;
+
+            background: #ffffff15;
+
+            color: #90caf9;
+
+            font-size: 14px;
+
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+
+            margin-bottom: 20px;
+
+            background: linear-gradient(
+                90deg,
+                #ffffff,
+                #90caf9
+            );
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            color: #cfd8dc;
+
+            margin-bottom: 10px;
+        }
+
+        .button {
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 14px 28px;
+
+            background: #2196f3;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #42a5f5;
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 10px 25px rgba(33, 150, 243, 0.35);
+        }
+
+        footer {
+            margin-top: 35px;
+
+            font-size: 13px;
+
+            color: #90a4ae;
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- Menu de Navegação -->
-    <header>
-        <div class="logo">DevSite</div>
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#contacto">Contacto</a>
-            <button id="theme-toggle">🌙</button>
-        </nav>
-    </header>
+    <main class="container">
 
-    <!-- Secção Principal / Hero -->
-    <section id="inicio" class="hero">
-        <h1>Bem-vindo ao Futuro do Desenvolvimento</h1>
-        <p>Criamos soluções digitais incríveis utilizando JavaScript moderno, HTML5 e CSS3.</p>
-        <button onclick="scrollToSection('contacto')">Começar Agora</button>
-    </section>
+        <span class="tag">
+            🚀 Meu primeiro projeto
+        </span>
 
-    <!-- Secção de Serviços -->
-    <section id="servicos" class="services">
-        <h2>O Que Fazemos</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Designs Modernos</h3>
-                <p>Interfaces limpas, intuitivas e totalmente adaptáveis a qualquer ecrã de telemóvel ou PC.</p>
-            </div>
-            <div class="card">
-                <h3>Código Otimizado</h3>
-                <p>Aplicações rápidas e eficientes escritas com as melhores práticas de JavaScript.</p>
-            </div>
-        </div>
-    </section>
+        <h1>Olá, GitHub!</h1>
 
-    <!-- Secção de Contacto -->
-    <section id="contacto" class="contact">
-        <h2>Fale Connosco</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="O seu nome" required>
-            <input type="email" id="email" placeholder="O seu e-mail" required>
-            <textarea id="message" placeholder="A sua mensagem" rows="5" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
-    </section>
+        <p>
+            Este é o meu primeiro projeto publicado na Internet.
+        </p>
 
-    <footer>
-        <p>&copy; 2026 DevSite. Todos os direitos reservados.</p>
-    </footer>
+        <p>
+            Estou a aprender programação,
+            desenvolvimento web e GitHub.
+        </p>
 
-    <script src="script.js"></script>
+        <a href="#" class="button">
+            Explorar projeto
+        </a>
+
+        <footer>
+            Criado com HTML e CSS
+        </footer>
+
+    </main>
+
 </body>
 </html>
